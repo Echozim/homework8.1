@@ -188,8 +188,6 @@
 }
 
 .box-team {
-  width: 270px;
-  margin:  0 auto;
   background: #FFFFFF;
   border-radius: 0 0 4px 4px;
   box-shadow:   0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20); 
@@ -209,14 +207,14 @@
   font-size: 16px;
   font-weight: 400;
   color: #757575;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  text-align: center; 
+  margin-top: 10px;
+  
 }
 
 .box-team img {
    width: 100%;
-  height: 100%;
+  height: 260px;
   object-fit: cover;
 }
 
@@ -226,12 +224,15 @@
 }
 
 .footer {
-  min-height: 252px;
   background: #2F303A;
+  padding: 60px 0;
 }
 
 .logo-footer {
-  padding-top: 60px;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 0 0 20px;
+  
 }
 
 .footer-nav a {
@@ -242,7 +243,6 @@
   color: #FFFFFF;
   text-decoration: none;
   opacity: 60%;
-  padding: 9px;
 }
 
 .footer-p {
@@ -250,13 +250,13 @@
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
-  padding-top: 20px;
 }
 
 
 .box-footer {
   display: flex;
   flex-flow: column;
+  gap: 9px;
 }
 
 
@@ -264,36 +264,21 @@
 .button {
    display: inline-block;
   color: #FFFFFF;
-  font-size: 16px;
   font-weight: 700;
-  letter-spacing: 1px;
   background: #2196F3;
-  text-decoration: none;
-  padding: 6px;
-  min-width: 200px;
-  flex-shrink: 0;
-  height: 38px;
+  padding: 11px 30px;
   cursor: pointer;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
    border-radius: 4px 4px 4px 4px;
 }
 
 .button-second {
- display: inline-block;
- gap: 8;
- color: #212121;
- font-size: 16px;
  font-weight: 700;
- letter-spacing: 1px;
- text-decoration: none;
- padding: 6px;
- flex-shrink: 0;
- min-width: 200px;
+ padding: 11px 30px;
  font-family: "Montserrat", sans-serif;
  border-radius: 4px 4px 4px 4px;
  background: #F5F4FA;
- height: 38px; 
+ cursor: pointer;
 }
 
 .button-second:hover{
@@ -305,27 +290,10 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-top: 95px;
 }
  
 .content-box {
-  width: 1170px;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.product {
-  width: 1170px;
-  justify-content: center;
-}
-
-
-.product-box {
-  border: 1px solid #EEE;
-  background: #FFF;
-  color: #212121;
-  width: 370px;
-  margin: 0 auto;
+  padding: 95px 0 50px;
 }
 
 .name-products {
@@ -347,9 +315,40 @@
   padding-left: 24px;
 }
  
+.text-div {
+  padding: 30px;
+  padding-top: 10px;
+}
 
-  
+.active-second {
+  background: #2196F3;
+  color: #FFFFFF;
+}
+
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 95px;
+ }
+
  
-  
+.product-card {
+  flex: 1 1 30%;
+}
+ 
+ .product-box {
+  border: 1px solid #EEE;
+}
+
+
+ .product-box img {
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+}
+
+
 
   
