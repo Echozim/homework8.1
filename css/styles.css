@@ -336,10 +336,13 @@
  
 .product-card {
   flex: 1 1 30%;
+  
 }
  
  .product-box {
   border: 1px solid #EEE;
+  position: relative;
+  cursor: pointer;
 }
 
 
@@ -349,6 +352,28 @@
   object-fit: cover;
 }
 
+.hover {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  line-height: 28px;
+  letter-spacing: 3%;
+  display: none;
+  cursor: pointer;
+  width: 370px;
+  height: 294px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.product-card:hover .hover {
+  display: block;
+}
 
 
   
