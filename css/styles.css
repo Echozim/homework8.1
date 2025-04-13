@@ -26,6 +26,7 @@
   padding: 25px 0;
   font-weight: 500;
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .header-nav, .header-info {
@@ -375,5 +376,76 @@
   display: block;
 }
 
+.filters-list {
+  display: block;
+  position: relative;
+}
 
-  
+.filters-list>ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-top: 31px;
+}
+
+.filters-list a {
+   display: block;
+   text-decoration: none;
+}
+
+.filters-list:hover>ul {
+  display: block;
+}
+
+.filters-list>ul a {
+  white-space: nowrap;
+  background: #F5F4FA;
+}
+
+.dop-list {
+  position: absolute;
+  top: -31px;
+  left: -70px;
+}
+
+.menu {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.menu::before, 
+.menu::after,
+.menu span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #212121;
+}
+
+.menu::after {
+  top: auto;
+  bottom: 0;
+}
+
+.menu span {
+  top: 50%;
+  margin-top: -2px;
+}
+
+.menu:hover {
+  position: fixed;
+}
+
+.burger-menu {
+  width: 200px;
+  background: #ECECEC;
+
+}
