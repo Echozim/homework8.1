@@ -337,19 +337,21 @@
  
 .product-card {
   flex: 1 1 30%;
+  border: 1px solid #EEE;
   
 }
  
  .product-box {
-  border: 1px solid #EEE;
   position: relative;
   cursor: pointer;
+  height: 294px;
+  overflow: hidden;
 }
 
 
  .product-box img {
   width: 100%;
-  height: 294px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -359,32 +361,29 @@
   color: #FFFFFF;
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
   line-height: 28px;
-  letter-spacing: 3%;
+  letter-spacing: 0.5px;
   display: none;
-  cursor: pointer;
-  width: 370px;
-  height: 294px;
   text-align: center;
   font-size: 18px;
+  align-items: center;
 }
 
 
 .product-card:hover .hover {
-  display: block;
+  display: flex;
 }
 
 .filters-list {
   display: block;
   position: relative;
+  z-index: 10;
 }
+
 
 .filters-list>ul {
   position: absolute;
   top: 100%;
-  left: 0;
   display: none;
   padding-top: 31px;
 }
@@ -401,13 +400,16 @@
 .filters-list>ul a {
   white-space: nowrap;
   background: #F5F4FA;
+  padding: 8px;
 }
 
-.dop-list {
-  position: absolute;
-  top: -31px;
-  left: -70px;
+.filters-list>.header-list-second {
+  left: auto;
+  right: 100%;
+  padding: 0;
+  top: 0;
 }
+
 
 .menu {
   width: 40px;
@@ -416,6 +418,7 @@
   top: 25px;
   left: 15px;
   cursor: pointer;
+  z-index: 15;
 }
 
 .menu::before, 
@@ -444,8 +447,18 @@
   position: fixed;
 }
 
-.burger-menu {
-  width: 200px;
-  background: #ECECEC;
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #F5F4FA;
+  padding: 90px 20px 20px;
+  display: none;
+}
 
+.menu:hover+.aside,
+.aside:hover {
+  display: block ;
 }
