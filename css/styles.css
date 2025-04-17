@@ -16,6 +16,7 @@
 .header-container {
   display: flex;
   align-items: center;
+  
 }
 
 .header-logo {
@@ -461,4 +462,287 @@
 .menu:hover+.aside,
 .aside:hover {
   display: block ;
+}
+
+
+.main-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  text-transform: uppercase;
+}
+
+.container-second {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.image-bg {
+  background: url('../img/main.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(47, 48, 58, 0.4);
+  z-index: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; 
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+
+.button-second {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  background: #2196F3;
+  text-decoration: none;
+  padding: 17px;
+  min-width: 200px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+}
+
+.button-second:hover {
+  background-color: #1976d2;
+}
+
+.antenna {
+  width: 270px;
+  padding-top: 150px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  position: relative;
+}
+
+.antenna::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA url("../img/antenna\ 1.svg") no-repeat 50%/70px;
+}
+
+.text-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.text-p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #757575;
+  padding-top: 10px;
+}
+
+.clock {
+  width: 270px;
+  padding-top: 150px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  position: relative; 
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA url("../img/clock\ 1.svg")  no-repeat 50%/70px;
+}
+
+.diagram {
+  width: 270px;
+  padding-top: 150px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  position: relative; 
+}
+
+.diagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA url("../img/diagram\ 1.svg") no-repeat 50%/70px;
+}
+
+.astronaut {
+  width: 270px;
+  padding-top: 150px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  position: relative; 
+}
+
+.astronaut::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA url("../img/astronaut\ 1.svg") no-repeat 50%/70px;
+}
+
+.cards-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  gap: 30px; 
+  padding: 40px;
+  flex-wrap: wrap; 
+}
+
+.texth1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+  padding-bottom: 50px;
+}
+
+.desctop {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  background-image: url('../img/desktop.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.desctop::after {
+  content: "Desktop applications";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.mobile {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  background-image: url("../img/mobile.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+.mobile::after {
+  content: "Mobile applications";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.design1 {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  background-image: url("../img/design.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.design1::after {
+  content: "Design solutions";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase; 
+  font-family: "Montserrat", sans-serif;
+}
+
+.image-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 94px; 
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
