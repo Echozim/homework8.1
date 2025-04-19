@@ -115,11 +115,16 @@
   gap: 30px;
 }
 
+.about-card {
+  flex: 1 1 25%;
+}
+
 .about-card > .Attention-to-detail {
   margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+
 }
 
 .about-card > .Punctuality {
@@ -127,6 +132,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .about-card > .Planning {
@@ -134,6 +140,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+   
 }
 
 .about-card > .Modern-technologies {
@@ -141,6 +148,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+   
 }
 
 
@@ -510,6 +518,7 @@
   text-align: center;
   z-index: 1;
   position: relative;
+  max-width: 700px;
 }
 
 
@@ -746,3 +755,174 @@
   gap: 30px;
   justify-content: center;
 }
+
+
+
+.hero-second {
+  background: #F5F4FA;
+  background-size: cover;
+  background-position: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-position: center;
+  margin-top: 94px; 
+  margin-bottom: 94px;     
+}
+
+.team-second {
+  position: relative;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+  color: #212121;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-second {
+  text-align: center;
+  width: 270px;
+  height: 428px;
+  background-color: #fff;
+  box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-second img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.card-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #212121;
+}
+
+.card-role {
+  font-size: 16px;
+  color: #757575;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0; 
+}
+
+
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+  justify-content: center; 
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  background-position: center;width: 44px;
+  background-color: #FFFFFF; 
+  background-image: url('../img/inst.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%; 
+}
+
+.icon-instagram {
+  background-image: url('../img/inst.svg') 
+}
+
+.icon-twitter {
+  background-image:  url('../img/twitter-second.svg')  
+}
+
+.icon-facebook {
+  background-image: url('../img/facebook-second.svg');
+}
+
+.icon-linkedin {
+  background-image: url('../img/linkedin-second.svg');
+  }
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 20px 0 0;
+  margin: 0;
+  justify-content: center; 
+}
+
+.footer-icon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon:hover {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.footer-icon-instagram {
+  background-image: url('../img/instagram2.svg');
+}
+
+.footer-icon-twitter {
+  background-image: url('../img/twitter2.svg');
+}
+
+.footer-icon-facebook {
+  background-image: url('../img/facebook2.svg');
+}
+
+.footer-icon-linkedin {
+  background-image: url('../img/linkedin2.svg');
+}
+
+
+.footer-join {
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-join-title {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
