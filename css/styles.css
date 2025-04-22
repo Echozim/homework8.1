@@ -2,9 +2,13 @@
 @import url("reset.css");
 
 
-.body {
-  font-family: "Montserrat", sans-serif;
-  color: #212121;
+
+.hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .container {
@@ -831,43 +835,52 @@
 
 
 .social-icons {
-  display: flex;
+ display: flex;
   gap: 10px;
   list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  list-style: none;
+  padding: 20px 0 0;
+  margin: 0;
   justify-content: center; 
+  cursor: pointer;
 }
 
-.icon {
-  width: 44px;
+.social-icons:hover {
+  fill: #FFFFFF;
+}
+
+
+
+
+.card-icons {
+   width: 44px;
   height: 44px;
-  background-size: cover;
-  background-position: center;width: 44px;
-  background-color: #FFFFFF; 
-  background-image: url('../img/inst.svg'); 
+  background-color: #ffffff ; 
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%; 
-   cursor: pointer;
+  background-size: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon-instagram {
-  background-image: url('../img/inst.svg') 
+.card-icons:hover {
+  background-color: #2196F3;
+  transition: background-color 0.5s;
 }
 
-.icon-twitter {
-  background-image:  url('../img/twitter-second.svg')  
+.icons-social {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
 }
 
-.icon-facebook {
-  background-image: url('../img/facebook-second.svg');
+.card-icons:hover .icons-social {
+  fill: #ffffff;
 }
 
-.icon-linkedin {
-  background-image: url('../img/linkedin-second.svg');
-  }
+
+
 
 .footer-social-icons {
   display: flex;
@@ -892,25 +905,18 @@
   justify-content: center;
 }
 
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  fill:  #fff;
+}
+
 .footer-icon:hover {
-  background-color: rgba(33, 150, 243, 1);
+  background-color: #2196F3;
+   transition: background-color 0.5s;
 }
 
-.footer-icon-instagram {
-  background-image: url('../img/instagram2.svg');
-}
-
-.footer-icon-twitter {
-  background-image: url('../img/twitter2.svg');
-}
-
-.footer-icon-facebook {
-  background-image: url('../img/facebook2.svg');
-}
-
-.footer-icon-linkedin {
-  background-image: url('../img/linkedin2.svg');
-}
 
 
 .footer-join {
@@ -920,6 +926,7 @@
   align-items: flex-start;
   margin-top: 12px;
 }
+
 
 .footer-join-title {
   font-size: 14px;
@@ -955,7 +962,7 @@
 }
 
 .cards-block {
-  width: 170px;
+ flex: 1 1 11%;
   height: 92px;
   display: flex;
   align-items: center;
@@ -977,4 +984,10 @@
   fill: #AFB1B8; 
   transition: fill 0.3s ease;
 }
+
+.cards-block:hover svg {
+  fill: #2196f3 ;
+
+}
+
 
